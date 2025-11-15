@@ -36,7 +36,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 min-h-screen p-4">
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen p-4">
     <div class="w-full max-w-4xl mx-auto my-8">
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
             <div class="p-8">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             
-            <div id="results-section" class="bg-gray-50 dark:bg-gray-800/50 p-8 border-t border-gray-200 dark:border-gray-700 hidden">
+            <div id="results-section" class="bg-white dark:bg-gray-800/50 p-8 border-t border-gray-200 dark:border-gray-700 hidden">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Assessment Results</h2>
                 <div id="error-message" class="hidden bg-red-100 dark:bg-red-900/50 border-l-4 border-red-500 text-red-700 dark:text-red-300 p-4 rounded-md mb-6" role="alert">
                     <p class="font-bold">Error</p>
@@ -73,12 +73,12 @@
                 </div>
                 <div id="results-content" class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="space-y-6">
-                        <div class="flex justify-between items-center bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Structure</span><span id="structure-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/4</span></div>
-                        <div class="flex justify-between items-center bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Content</span><span id="content-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/4</span></div>
-                        <div class="flex justify-between items-center bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Language</span><span id="language-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/4</span></div>
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Structure</span><span id="structure-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/4</span></div>
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Content</span><span id="content-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/4</span></div>
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-gray-700 p-4 rounded-lg shadow-sm"><span class="font-medium text-gray-600 dark:text-gray-300">Language</span><span id="language-score" class="font-bold text-lg text-purple-600 dark:text-purple-400">-/44</span></div>
                     </div>
                     <div class="flex flex-col gap-6">
-                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center flex flex-col items-center justify-center">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center flex flex-col items-center justify-center">
                             <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Total Score</h3>
                             <div class="relative w-32 h-32 mt-2">
                                 <svg class="w-full h-full" viewBox="0 0 36 36">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="md:col-span-2 bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm">
+                    <div class="md:col-span-2 bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm">
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Areas for Improvement</h3>
                             <button id="rewrite-button" class="hidden bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-semibold py-2 px-4 rounded-lg hover:bg-purple-200 dark:hover:bg-purple-900/70 transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
